@@ -14,26 +14,43 @@
 <p class="class-cool">
     Mon super contenu récupéré par la classe
 </p>
-
-<a>
+<p class="class-cool">
+    mon petit texte mignon!
+</p>
+<a class="class-cool">
     Mon super contenu récupéré par le tag section
 </a>
 
+<p class="class-cool">
+    Mon super contenu récupéré par la classe
+</p>
+<p class="class-cool">
+    mon petit texte mignon!
+</p>
+<a class="class-cool">
+    Mon super contenu récupéré par le tag section
+</a>
+<a class="class-cool">
+    Mon secondsuper contenu récupéré par le tag section
+</a>
 <!-- À appeler dans un js à part -->
 <script type="text/javascript">
-    // let elementById = document. (...)
-    // let elementsByClass = document. (...)
-    // let elementsByTag = document. (...)
+    let elementById = document.getElementById("super-id")
+    let elementsByClass = document.getElementsByClassName('class-cool')
+    let elementsByTag = document.getElementsByTagName("*")
 
     console.log("-----------------------------------");
     console.log("Afficher grâce à l'id :");
-    console.log(elementById);
+    // console.log(elementById);
+    console.log(document.querySelector("#super-id"));
     console.log("-----------------------------------");
     console.log("Afficher grâce à la class :");
-    console.log(elementsByClass);
+    // console.log(elementsByClass);
+    console.log(document.querySelectorAll("a"));
     console.log("-----------------------------------");
     console.log("Afficher grâce à au tag :");
-    console.log(elementsByTag);
+    // console.log(elementsByTag);
+    console.log(document.querySelector("p"));
     console.log("-----------------------------------");
 </script>
 </body>
