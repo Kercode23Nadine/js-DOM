@@ -24,10 +24,16 @@
     <script type="text/javascript">
 
         // Supprimer les message à supprimer ! (qui contiennent le mot "supprimer")
-        // écgti pushrire la fonction qui fera le travail de suppression lors du "click" sur le bouton
-        let p1 = document.querySelector('p');
-        let eltDel = removeEle("p1");
+        // écgti pushgit pushrire la fonction qui fera le travail de suppression lors du "click" sur le bouton
+        function suppress() {
+            let yieldElement = document.getElementById('yield');
+            let messageElements = yieldElement.querySelectorAll('p');
+            messageElements.forEach(messageElement => {
+                if (messageElement.innerText.toLocaleUpperCase.include('supprimer'))
+                    messageElement.remove();
 
+            });
+        }
     </script>
 </body>
 
